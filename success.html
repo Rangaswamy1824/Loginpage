@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            background-image: url('.//WhatsApp\ Image\ 2024-08-30\ at\ 4.19.01\ PM.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
+        
+        .con {
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .msg {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            background-color: #fff;
+            color: #4caf50;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .button:hover {
+            background-color: #f1f1f1;
+            transform: translateY(-2px);
+        }
+        
+        .button:active {
+            background-color: #e0e0e0;
+            transform: translateY(0);
+        }
+        
+        @media (max-width: 600px) {
+            .con {
+                padding: 15px;
+            }
+            .msg {
+                font-size: 1.2rem;
+            }
+            .button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="con">
+        <div class="msg">Login Successful!</div>
+        <button class="button" onclick="goToHome()">Go to Home</button>
+    </div>
+    <script>
+        function goToHome() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>
